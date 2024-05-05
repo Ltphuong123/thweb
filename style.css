@@ -1,210 +1,308 @@
-*,*::before,*::after {
-    box-sizing: border-box;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+ * body {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+
+ /*.body {
+     font-family: 'Roboto',sans-serif;
+ }*/
+
+ /*header style code*/
+ .material-icons{
+     color: rgb(96,96,96);
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 70px;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+
+ .header_left {
+    display: flex;
+    align-items: center;
 }
 
-body {
+ .header_left img{
+     width:100px;
+     margin-left: 15px;
+
+ }
+
+ .header i{
+     padding: 0px 7px;
+     cursor: pointer;
+
+ }
+
+ .header__search .form{
+     border: 1px solid #ddd;
+     height: 35px;
+     margin: 0;
+     padding: 0;
+     display: flex;
+ }
+
+ .header__search input{
+     width: 600px;
+     padding: 10px;
+     margin: 0;
+     border-radius: 0;
+     border: none;
+ }
+
+ .search-bar { 
+    width: 600px;
+    padding: 10px;
     margin: 0;
+    border-radius: 0;
+    border: none;
+ }
+
+ /*.header__search button{
+     padding: 0;
+     margin: 0;
+     height: 100;
+     border: none;
+     border-radius: 0;
+ }*/
+
+ .search-btn {
+    padding: 0;
+    margin: 0;
+    height: 100;
+    border: none;
+    border-radius: 0;
+ }
+
+ /*style for mainbody*/
+
+ .mainbody{
+     height: calc(100vh-70px);
+     display: flex;
+     overflow: hidden;
+ }
+
+ /*sidebar*/
+
+ .sidebar{
+     height: 100%;
+     width: 230px;
+     background-color: white;
+     overflow-y: scroll;
+ }
+
+ .sidebar_categories{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 15px;
+     margin-top: 15px;
+ }
+
+ .sidebar_category{
+     display: flex;
+     align-items: center;
+     padding: 12px 25px;
+ }
+
+ .sidebar_category span{
+     margin-left: 15px;
+ }
+
+ .sidebar_category:hover{
+     background: #e5e5e5;
+     cursor: pointer;
+ }
+
+.sidebar::-webkit-scrollbar{
+    display: none;
+    
 }
 
-.video-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 3rem 1rem;
-    padding: 3rem 0;
-    margin: 0 1.5rem;
-    border-top: 4px solid #ccc;
+hr{
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
 }
 
-.video-section:first-child {
-    border-top: none;
-}
+/* Videos*/
 
-.video-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.thumbnail {
-    position: relative;
-    display: flex;
-}
-
-.thumbnail::before {
-    content: attr(data-duration);
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: white;
-    right: 5px;
-    bottom: 5px;
-    padding: .1em .3em;
-    border-radius: .3em;
-    font-size: .9rem;
-}
-
-.thumbnail-image {
+.videos{
+    background-color: #f9f9f9;
     width: 100%;
     height: 100%;
-    min-height: 150px;
-    min-width: 250px;
-    background-color: #AAA;
+    padding: 15px 25px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
 }
 
-.video-bottom-section {
+.videos_container{
     display: flex;
-    align-items: flex-start;
-    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.channel-icon {
-    margin-right: .75rem;
+.video{
+    width: 310px;
+    margin-right:4px;
+    margin-bottom: 30px;
+}
+
+.video_thumbnail{
+    width: 100%;
+    height: 170px;
+}
+
+.video_thumbnail img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.author img{
+    object-fit: cover;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    background-color: #AAA;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
-.video-details {
+.video_details {
+    display:flex;
+    margin-top: 10px;
+    
+}
+
+.title{
     display: flex;
     flex-direction: column;
+    font-size: 40px;
 }
 
-.video-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: .5rem;
+.title h3{
+    color: rgb(3,3,3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+
+.title a,span{
     text-decoration: none;
-    color: black;
+    color: rgb(96,96,96);
+    font-size: 14px;
 }
 
-.video-channel-name {
-    margin-bottom: .1rem;
-    text-decoration: none;
-    transition: color 150ms;
+h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(3,3,3);
+
 }
 
-.video-channel-name:hover {
-    color: #111;
-}
+@media (max-width: 425px) {
+    .header__search {
+      display: none;
+    }
+  
+    .header_icons .material-icons {
+      display: none;
+    }
+  
+    .header_icons .display-this {
+      display: inline;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  }
 
-.video-channel-name,
-.video-metadata {
-    color: #555;
-}
+  @media (max-width: 768px) {
+    .header__search {
+      display: none;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  
+    .show-sidebar {
+      display: inline;
+      position: fixed;
+      top: 4.4rem;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 941px) {
+    .header__search input {
+      width: 300px;
+    }
+  }
 
-.video-section-title {
-    grid-column: 1/ -1;
-    margin:  -.5rem 0;
+  @media (max-width: 1072px) {
+    .header__search input {
+      width: 300px;
+    }
+  }
+  
+  .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 .5rem;
+    align-items: center; /* Canh các phần tử vào giữa theo chiều dọc */
 }
 
-.video-section-title-close {
-    border: none;
-    background: none;
+.icon {
+    color: purple; /* Màu tím */
+    font-size: 50px; /* Phóng to kích thước */
+}
+
+.Trending {
+    font-weight: bold; /* Đậm */
+    color: rgb(39, 37, 37); /* Màu đen */
+    font-size: 30px; /* Phóng to kích thước */
+    font-family: "Roboto", "Arial", sans-serif;
+}
+.menu ul {
+    list-style-type: none;
     padding: 0;
-    font-size: 2rem;
-    color: #555;
+    display: flex;
+    border-bottom: 1px solid rgb(188, 181, 181);
+}
+
+.menu ul li {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px; /* Giảm cỡ chữ lại */
+    line-height: 2.2rem;
+    font-weight: 500;
     cursor: pointer;
+    padding-bottom: 5px;
+    transition: border-bottom 0.3s ease;
+    margin-right: 30px; /* Khoảng cách giữa các mục */
+    color: rgb(86, 86, 86);
 }
 
-.videos {
-    background-color: #f9f9f9;
+.menu ul li:last-child {
+    margin-right: 0; /* Loại bỏ margin-right cho phần tử cuối cùng */
 }
 
-.categories {
-    padding: 1rem 2rem;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+.menu ul li:hover {
+    color: rgb(17, 16, 16);
 }
 
-.category-section {
-    display: flex;
-    overflow: hidden;
+.menu ul li.active {
+    color: black;
+    
+    border-bottom: 2px solid black; /* Dòng kẻ dưới cho mục được chọn */
 }
 
-.category {
-    margin-right: 1rem;
-    word-wrap: none;
-    white-space: nowrap;
-    border: 1px solid #CCC;
-    border-radius: 900px;
-    background-color: #E7E7E7;
-    padding: .5rem 1rem;
-    font-size: inherit;
-    cursor: pointer;
-    transition: background-color 150ms;
-}
-
-.category:hover {
-    background-color: #DDD;
-}
-
-.category.active {
-    background-color: #606060;
-    color: white;
-    border-color: #EEE;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-}
-
-.youtube-logo {
-    height: 100px;
-}
-
-.search-bar {
-    display: flex;
-    flex-grow: 1;
-    margin: 0 2rem 0 4rem;
-}
-
-.search-input {
-    width: 100%;
-    font-size: inherit;
-    padding: .4rem;
-    border: 1px solid #777;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.search-btn {
-    display: flex;
-    align-items: center;
-    padding: 0 1.25rem;
-    height: 34px;
-    border: 1px solid #777;
-    background-color: #F8F8F8;
-    border-left: none;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    cursor: pointer;
-}
-
-.search-btn:hover {
-    background-color: #F0F0F0;
-}
-
-.magnify-img {
-    max-height: 22px;
-}
-
-.menu-icons {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.menu-channel-icon {
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    background-color: #AAA;
-}

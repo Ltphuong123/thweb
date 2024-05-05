@@ -1,346 +1,475 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="crome">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-        <title>Document</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">' 
+    <link rel="stylesheet" href="style.css"/>
+    <title>YouTube</title>
+</head>
+
     <body>
-        <header class="header">
-            <a href="#">
-                <img src="youtube-logo.png" alt="youtube logo" class="youtube-logo">
-            </a>
-            <form action="" class="search-bar">
-                <input type="search" class="search-input" placeholder="Search" aria-label="Search">
-                <button type="submit" class="search-btn">
-                    <img class="magnify-img" src="magnify.svg">
-                </button>
-            </form>
-            <div class="menu-icons">
-                <a href="#">
-                    <img class="magnify-img" src="video-plus.png" alt="video plus">
-                </a>
-                <a href="#">
-                    <img class="magnify-img" src="apps.png" alt="apps">
-                </a>
-                <a href="#">
-                    <img class="magnify-img" src="bell.png" alt="bell">
-                </a>
-                <a href="#">
-                    <img class="menu-channel-icon" src="995-36x36.jpg" alt="your channel">
-                </a>
+        <!--header starts-->
+        <div class= "header">
+
+            <div class="header_left">
+                <i id="menu" class="material-icons">menu</i>
+                <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="youtube logo">
             </div>
-        </header>
-        <div class="categories">
-            <section class="category-section">
-                <button class="category active">All</button>
-                <button class="category">Category 1</button>
-                <button class="category">Category 2</button>
-                <button class="category">Category 3</button>
-                <button class="category">Category 4</button>
-                <button class="category">Category 5</button>
-                <button class="category">Category 6</button>
-                <button class="category">Category 7</button>
-                <button class="category">Category 8</button>
-                <button class="category">Category 9</button>
-            </section>
+            
+             <div class="header__search">
+                <div class="search-box">     
+                    <div class="form">
+                        <input type="text" class="search-bar" placeholder="Search">
+                        <button class="search-btn"><i class="material-icons">search</i> </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_icons">
+                <i class="material-icons display-this">search</i>
+                <i class="material-icons">videocam</i>
+                <i class="material-icons">apps</i>
+                <i class="material-icons">notifications</i>
+                <i class="material-icons display-this">account_circles</i>
+            </div>
+
         </div>
+        <!--header ends-->
 
+        <!--main body starts-->
 
-        <div class="videos">
-            <section class="video-section">
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
+        <div class="mainbody">
+            <!--sidebar starts-->
+            <div class="sidebar">
+                <div class="sidebar_categories">
+                    <div class="sidebar_category">
+                        <i class="material-icons">home</i>
+                        <span>Home</span>
                     </div>
-                </article>
 
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
+                    <div class="sidebar_category">
+                        <i class="material-icons">local_fire_department</i>
+                        <span>Trending</span>
                     </div>
-                </article>
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </section>
 
-            <section class="video-section">
-                <h2 class="video-section-title">
-                    Special section
-                    <button class="video-section-title-close">
-                        &times;
-                    </button>
-                </h2>
+                    <div class="sidebar_category">
+                        <i class="material-icons">subscriptions</i>
+                        <span>Subscriptions</span>
+                    </div>
+                </div>
+                <hr/>
 
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
+                <div class="sidebar_categories">
+                    <div class="sidebar_category">
+                        <i class="material-icons">library_add</i>
+                        <span>Library</span>
                     </div>
-                </article>
 
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
-                            </div>
-                        </div>
+                    <div class="sidebar_category">
+                        <i class="material-icons">history</i>
+                        <span>History</span>
                     </div>
-                </article>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">play_arrow</i>
+                        <span>Your Videos</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">watch_later</i>
+                        <span>Watch Later</span>
+                    </div>
+
+                    <div class="sidebar_category">
+                        <i class="material-icons">thumb_up</i>
+                        <span>Liked Videos</span>
+                    </div>
+                </div>
+                <hr/>
+            </div>
+            <!--sidebar ends-->
+
+            <div class="videos">
+                <div class="container">
+                    <i class="material-icons icon">local_fire_department</i>
+                    <span class="Trending">Thịnh Hành</span>
+                </div>
                 
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
+                <div class="menu">
+                    <ul>
+                        <li class="active">Mới nhất</li>
+                        <li>Trò chơi</li>
+                        <li>Âm Nhạc</li>
+                        <li>Phim ảnh</li>
+                    </ul>
+                </div>
+                <div class="videos_container">
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/1.png" alt="img1">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/11.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>My Favorite tools for New Entrepreneurs</h3>
+                                <a href="">Olivia Morgan</a>
+                                <span> 1.6M views ∙ 1 month ago</span>
                             </div>
                         </div>
                     </div>
-                </article>
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/2.png " alt="img2">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/22.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>Summer Party Tips</h3>
+                                <a href="">Dorcelle.Co</a>
+                                <span> 784K views ∙ 4 months ago</span>
                             </div>
                         </div>
                     </div>
-                </article>
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+
+                        <div class="video_thumbnail">
+                            <img src="./Images/5.png " alt="img5">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/44.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>What is Blockchain and Cryptocurrency?</h3>
+                                <a href="">TECHTAB</a>
+                                <span> 3.2M views ∙ 5 days ago</span>
                             </div>
                         </div>
                     </div>
-                </article>
-                
-                <article class="video-container">
-                    <a href="#" class="thumbnail" data-duration="12:24">
-                        <img src="494-250x150.jpg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="995-36x36.jpg" alt="" class="channel-icon">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Video Title</a>
-                            <a href="#" class="video-channel-name">Channel name</a>
-                            <div class="video-meta-data">
-                                <span>12K views</span>
-                                ●
-                                <span>1 week ago</span>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/3.png " alt="img3">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/33.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>No-Bake Vegan Brownies</h3>
+                                <a href="">Cute Cakes</a>
+                                <span> 1M views ∙ 3 months ago</span>
                             </div>
                         </div>
                     </div>
-                </article>
-            </section>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/6.png " alt="img6">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/44.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>Speed Up your Device</h3>
+                                <a href="">TECHTAB</a>
+                                <span> 12M views ∙ 9 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/8.png " alt="img8">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/88.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>Workout for Office Worker</h3>
+                                <a href="">Seaside Yoga</a>
+                                <span> 322K views ∙ 3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/7.png " alt="img7">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/11.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>Working Day Routine| 2021 Edition</h3>
+                                <a href="">Olivia Morgan</a>
+                                <span> 1.1M views ∙ 2 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/9.png " alt="img9">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/88.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>15 min Workout</h3>
+                                <a href="">Seaside Yoga</a>
+                                <span> 5M views ∙ 11 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/4.png " alt="img4">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/44.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>Easy Tips to Recover your Data</h3>
+                                <a href="">TECHTAB</a>
+                                <span> 985K views ∙ 1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/1.png " alt="img1">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/11.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>My Favorite tools for New Entrepreneurs</h3>
+                                <a href="">Olivia Morgan</a>
+                                <span> 1.6M views ∙ 1 month ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/2.png " alt="img2">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/22.png" alt="author">
+                            </div> 
+                            <div class="title">
+                                <h3>Summer Party Tips</h3>
+                                <a href="">Dorcelle.Co</a>
+                                <span> 784K views ∙ 4 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/5.png " alt="img5">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/44.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>What is Blockchain and Cryptocurrency?</h3>
+                                <a href="">TECHTAB</a>
+                                <span> 3.2M views ∙ 5 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/3.png " alt="img3">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/33.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>No-Bake Vegan Brownies</h3>
+                                <a href="">Cute Cakes</a>
+                                <span> 1M views ∙ 3 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/6.png " alt="img6">
+                        </div>
+
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/44.png" alt="author">
+                            </div>
+                        
+                            <div class="title">
+                                <h3>Speed Up your Device</h3>
+                                <a href="">TECHTAB</a>
+                                <span> 12M views ∙ 9 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+
+                    <!--Single video starts-->
+                    <div class="video">
+
+                        <div class="video_thumbnail">
+                            <img src="./Images/8.png " alt="img8">
+                        </div>
+
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/88.png" alt="author">
+                            </div>
+                        
+                            <div class="title">
+                                <h3>Workout for Office Worker</h3>
+                                <a href="">Seaside Yoga</a>
+                                <span> 322K views ∙ 3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+
+                    <!--Single video starts-->
+                    <div class="video">
+
+                        <div class="video_thumbnail">
+                            <img src="./Images/7.png " alt="img7">
+                        </div>
+
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/11.png" alt="author">
+                            </div>
+                        
+                            <div class="title">
+                                <h3>Working Day Routine| 2021 Edition</h3>
+                                <a href="">Olivia Morgan</a>
+                                <span> 1.1M views ∙ 2 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+
+                    <!--Single video starts-->
+                    <div class="video">
+
+                        <div class="video_thumbnail">
+                            <img src="./Images/9.png " alt="img9">
+                        </div>
+
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/88.png" alt="author">
+                            </div>
+                        
+                            <div class="title">
+                                <h3>15 min Workout</h3>
+                                <a href="">Seaside Yoga</a>
+                                <span> 5M views ∙ 11 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+
+                    <!--Single video starts-->
+                    <div class="video">
+
+                        <div class="video_thumbnail">
+                            <img src="./Images/4.png " alt="img4">
+                        </div>
+
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/44.png" alt="author">
+                            </div>
+                        
+                            <div class="title">
+                                <h3>Easy Tips to Recover your Data</h3>
+                                <a href="">TECHTAB</a>
+                                <span> 985K views ∙ 1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/1.png " alt="img1">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/11.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>My Favorite tools for New Entrepreneurs</h3>
+                                <a href="">Olivia Morgan</a>
+                                <span> 1.6M views ∙ 1 month ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                    <!--Single video starts-->
+                    <div class="video">
+                        <div class="video_thumbnail">
+                            <img src="./Images/2.png " alt="img2">
+                        </div>
+                        <div class="video_details">
+                            <div class="author">
+                                <img src="./Images/22.png" alt="author">
+                            </div>
+                            <div class="title">
+                                <h3>Summer Party Tips</h3>
+                                <a href="">Dorcelle.Co</a>
+                                <span> 784K views ∙ 4 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single video ends-->
+                </div>
+            </div>
         </div>
+        <script src="index.js"></script>
+        <!--main body ends-->
     </body>
 </html>
